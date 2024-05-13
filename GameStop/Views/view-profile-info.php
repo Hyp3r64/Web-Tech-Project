@@ -69,7 +69,10 @@ if($id!=$id2) $flag = 1;
     <div class="header"></div>
         <br>
     <center>
-        <img src=<?php echo "../{$row['profilepic']}" ?> width="100px">
+        <?php
+             if($flag==0) echo "<img src=\"../{$row['profilepic']}\" width=\"100px\">";
+             else echo "<img src=\"../{$row2['profilepic']}\" width=\"100px\">";
+        ?>
         <br><br><br>
 
         <table width="40%" border="2" cellspacing="10" cellpadding="25" bordercolor="#1B6392">
