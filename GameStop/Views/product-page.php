@@ -2,10 +2,13 @@
     require_once('../Models/user-info-model.php'); 
     require_once('../Models/product-info-model.php'); 
     require_once('../Models/review-info-model.php'); 
-    require_once('../Controllers/message-controller.php'); 
+    require_once('../Controllers/message-controller.php');
 
-    $id = $_COOKIE['id'];
-    $row = UserInfo($id);
+//    if(!isset($_COOKIE['flag'])){
+//        popup("Error!","You need to sign-in in order to access this page.");
+//    }
+//    $id = $_COOKIE['id'];
+//    $row = UserInfo($id);
     $pid = $_GET['pid'];
     $result=getReview($pid);
     
