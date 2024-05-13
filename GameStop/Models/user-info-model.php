@@ -5,7 +5,7 @@
     
         $con = dbConnection();
     
-        $sql = "insert into userinfo values('', '{$fullname}' ,'{$username}' ,'{$phone}', '{$email}', '{$password}', 'Uploads/Images/default.jpg', '$role', 'Inactive')";
+        $sql = "insert into userinfo values('', '{$fullname}' ,'{$username}' ,'{$phone}', '{$email}', '{$password}', 'Uploads/Images/default.jpg', '$role', 'Active')";
     
         if(mysqli_query($con, $sql)) return true;
         else return false;
