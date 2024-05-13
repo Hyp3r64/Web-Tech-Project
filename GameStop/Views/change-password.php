@@ -83,7 +83,7 @@ $row = UserInfo($id);
                     <br>
                     <font color="red" face="times new roman" size="3" id="repasswordError"></font>
                     <br><br><br>
-                    <input type="submit" name="submit" id="submitButton" value="Change Password">
+                    <input type="submit" class="btn-submit" name="submit" id="submitButton" value="Change Password">
                 </td>
                 <br>
             </tr>
